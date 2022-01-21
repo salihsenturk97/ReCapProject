@@ -10,26 +10,10 @@ namespace ConsoleUI
     class Program
     {
         static void Main(string[] args)
-        {
-            //CarManager carManager = new CarManager(new InMemoryCarDal());
 
-            //foreach (var car in carManager.GetAll() )
-            //{
-            //    Console.WriteLine(car.Description + " Yılı = " + car.ModelYear + " Günlük fiyatı = " + car.DailyPrice + " TL");
-            //}
-
-            // CarTest();
-
-            //CarDetailDto carDetailDto = new CarDetailDto();
-            
-            CarManager carManager1 = new CarManager(new EfCarDal());
-            foreach (var car in carManager1.GetCarDetails())
-            {
-                Console.WriteLine("Araç ismi {0} , {1} araç markası , {2} araç rengi , {3} günlük fiyatı", car.CarName,car.BrandName,car.ColorName,car.DailyPrice);
-            }
-
-            //BrandTest();
+        {    //BrandTest();
             //ColorTest();
+            //CarTest();
 
         }
 
