@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -30,10 +31,12 @@ namespace DataAccess.Concrete.InMemory
             _cars.Add(car);
         }
 
+       
+
         public void Delete(Car car)
         {
-            var carToDelete = _cars.SingleOrDefault(c => c.Id == car.Id);
-            _cars.Remove(carToDelete);
+
+            _cars.Remove(_cars.SingleOrDefault(c => c.Id == car.Id));
 
         }
 

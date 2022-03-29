@@ -28,5 +28,11 @@ namespace Business.Constants
 
         public static string RentalError = "Rental Error!";
         public static string RentalAdded = "Rental Error!";
+
+        public static string CarImageAdded = "Araç görseli eklendi";
+        public static string CarImageDeleted = "Araç görseli silindi";
+        public static string CarImageUpdated = "Araç görseli güncellendi";
+
+        public static string CarImageLimitExceeded = "Arabaya resim ekleme limitine ulaşıldı";
     }
 }
